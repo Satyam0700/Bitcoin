@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&family=Rubik:wght@400;500;700&family=Satisfy&family=Tomorrow:wght@600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Tomorrow';
+    font-style: normal;
+    font-weight: 600;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.box {
+    background: linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(46, 49, 73, 0.1) 107.43%);
+    backdrop-filter: blur(50px);
+}
+
+.icon {
+    position: absolute;
+    padding: 10px;
+    height: 65px;
+    top: 0;
+    left: 29.5%;
+    background: #14172B;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+.icon-contain{
+    background: linear-gradient(180deg, rgba(98, 106, 136, 0.1) 0%, rgba(234, 179, 0, 0.06) 100%);
+    backdrop-filter: blur(50px);
+    padding: 15px;
+    border-radius: 50%;
+    position: relative;
+    top: -30px;
+}
+.icon::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -25%;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border-top-right-radius: 50px;
+    box-shadow: 5px -5px 0 5px #14172B;
+    
+}
+.icon::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: -25%;
+    width: 25px;
+    height: 25px;
+    background: transparent;
+    border-top-left-radius: 50px;
+    box-shadow: -5px -5px 0 5px #14172B;
+    z-index: -9;
+}
